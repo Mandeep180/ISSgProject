@@ -9,6 +9,32 @@ let usersRouter = require('./routes/users');
 
 let app = express();
 
+
+// line 13 - line 33 database setup
+// module for database setup
+const mongoose = require("mongoose");
+const DBConfig = require("./config/db");
+const expressSession = require('express-session');
+const ourDB = (DBConfig.RemoteURI) ? DBConfig.RemoteURI : DBConfig.LocalURI;
+mongoose.connect(ourDB);
+const db = mongoose.connection; //alias for the mongoose connection
+db.on("error", () => {
+  console.error("Connection Error");
+});
+db.once("open", () => {
+  console.log(`Connected to MongoDB at: ${DBConfig.HostName}`);
+});
+
+// create sessions
+app.use(expressSession({
+  secret: DBConfig.Secret,
+  saveUninitialized: false,
+  resave: false
+}));
+
+
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');// configure engine to ejs: express -e
