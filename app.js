@@ -6,6 +6,9 @@ let logger = require('morgan');
 
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
+let adminRouter = require('./routes/admin');
+let recruiterRouter = require('./routes/recruiter');
+let studentRouter = require('./routes/student');
 
 let app = express();
 
@@ -48,6 +51,9 @@ app.use(express.static(path.join(__dirname,'node_modules')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/admin', adminRouter);
+app.use('/recruiter', recruiterRouter);
+app.use('/student', studentRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
