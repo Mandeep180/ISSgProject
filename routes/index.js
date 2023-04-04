@@ -48,5 +48,28 @@ router.post("/register", indexController.processRegisterPage);
 router.get("/logout", indexController.performLogout);
 
 
+/* GET Student Dashboard page */
+router.get("/student-dashboard", (req, res, next) => {
+  res.render("student/dashboard", {
+    title: "Student Dashboard",
+    //name: "",
+  });
+});
+
+/* GET Admin Dashboard page */
+router.get("/admin-dashboard", (req, res, next) => {
+  res.render("admin/dashboard", {
+    title: "Admin Dashboard",
+    //name: "",
+  });
+});
+
+/* GET Recruiter Dashboard page */
+router.get("/recruiter-dashboard", (req, res, next) => {
+  res.render("recruiter/dashboard", {
+    title: "Recruiter Dashboard",
+    //name: "",
+  });
+});
 
 module.exports = router;
