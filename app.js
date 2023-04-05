@@ -7,7 +7,7 @@ let logger = require('morgan');
 let indexRouter = require('./routes/index');
 let studentRouter = require('./routes/student');
 let usersRouter = require('./routes/users');
-let adminRouter = require('./routes/admin');
+let staffRouter = require('./routes/staff');
 let recruiterRouter = require('./routes/recruiter');
 
 
@@ -52,7 +52,7 @@ app.use(express.static(path.join(__dirname,'node_modules')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/admin', adminRouter);
+app.use('/staff', staffRouter);
 app.use('/recruiter', recruiterRouter);
 app.use('/student', studentRouter);
 
