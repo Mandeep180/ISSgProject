@@ -1,16 +1,20 @@
+
 var express = require('express');
 var app = express();
 var router = express.Router();
+var port = 3000;
+
+
 
 app.set('view engine', 'ejs');
 
-// /* GET Student Dashboard page */
-// router.get("/student-dashboard", (req, res, next) => {
-//   res.render("student/dashboard", {
-//     title: "Student Dashboard",
-//     //name: "",
-//   });
-// });
+/* GET Student Dashboard page */
+router.get("/student-dashboard", (req, res, next) => {
+  res.render("student/dashboard", {
+    title: "Student Dashboard",
+    //name: "",
+  });
+});
 // /* GET Student Calendar page */
 // router.get("/student-calendar", (req, res, next) => {
 //   res.render("student/calendar", {
