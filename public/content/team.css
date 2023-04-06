@@ -1,0 +1,85 @@
+/*- - - - - - C O N T A C T - C A R D S - - - - - */
+
+.team .card{
+	width: 225px; /* ⬅ Size - Small (width: 200px), Medium (width: 225px), Large (width: 250px) */
+	overflow: hidden;
+	background-color: #FFFFFF;
+   
+	border-radius: 15px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	text-align: center;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+
+	.team .card:first-of-type{
+		margin-right: 25px;
+	}
+
+	.team .card:hover{
+		margin-top: -10px;
+	}
+
+    .team .banner{
+	height: 100px;
+	width: 100%;
+	padding-top: 30px;
+	background-color: #FAFAFA;
+	background-size: cover;
+	background-position: center;
+}
+
+.team .card:first-of-type .banner{
+		background-image: url("");
+	}
+
+    .team .avatar{
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	background-size: cover;
+	background-position: center;
+	background-color: #F1F1F1;
+	border-radius: 100%;
+}
+
+.team .card:nth-child(1) .avatar{
+		background-image: url("");
+	}
+
+    .team h3, a, i{
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+
+.team h3{
+		margin-top: 45px;
+		margin-bottom: 5px;
+		font-size: 18px;
+		color: #212121;
+	}
+    .team p{
+		font-size: 14px;
+		color: #212121;
+	}
+
+    .team ul{
+	margin-top: 10px;
+	padding: 15px 0px;
+	background-color: #FAFAFA;
+}
+
+.team ul a{
+	display: inline;
+	margin-right: 10px;
+}
+
+.team ul a:last-of-type{
+	margin-right: 0px;
+}
+
+.team ul a i:hover{
+	transform: scale(1.5);
+}

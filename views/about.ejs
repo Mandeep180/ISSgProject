@@ -1,17 +1,38 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/Content/about.css">
 
 
     <!--main content--> 
-    <main class="container">
+        <main class="container">
       <div class="jumbotron">
-        <h1 class="display-4">Welcome to the about page</h1>
-        
-        <p>wejhf</p>
-        <p>wejhf</p>
-      
-      
+        <h1 class="display-4"><%= title%></h1>
     </main>
+
+    <img class="image" src="/Assets/images/home_page.jpg"  width="900" height="600">
+      <div class="text">
+          <h3><Span>International Student Support</Span></h3><br><br>
+          <p><span class="bolded">Welcome to our International Student Support website! Our goal is to provide a comprehensive resource for 
+            international students studying in a foreign country. We understand that studying abroad can be challenging, 
+            and we are here to help you navigate the process and make your experience as smooth and enjoyable as possible.
+            Our website offers a range of resources to assist you, including information on visas, ID's, healthcare, 
+            employment opportunities, and cultural integration. Our team of experienced advisors is available to answer any additional questions you may have.<br><br>
+            We are committed to providing a safe and welcoming environment for all international students, regardless of their background or circumstances. 
+            Our website is regularly updated with the latest news and developments affecting international students,
+             and we are dedicated to advocating for your rights and interests.
+             Thank you for visiting our International Student Support website. We hope you find the 
+             resources and support you need to make your study abroad experience a success</span>
+          </p><br><br>
+             <div class="btn-group">
+              <a href="/register"><button class="signup-btn">Sign Up Now</button></a>
+              <div class="play-btn">
+             </div> 
+            </div>
+      </div>
 
     <%- include partials/bottom_nav.ejs %>
     <%- include partials/footer.ejs %>   

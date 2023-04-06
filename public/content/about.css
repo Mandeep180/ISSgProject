@@ -1,0 +1,44 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-weight: bold;
+   
+  }
+  .banner{
+    width: 80%;
+    height: 70%;
+    position:absolute;
+    top: 25%;
+    left: 150px;
+    color:#fff;
+    padding: 15px 50px;
+  }
+  span {
+    right: 40%;
+  }
+  .text .h3{
+    text-align: center;
+    padding: 15px 50px;
+    font-weight: bolder;
+  }
+  /* .btn-group{
+   display: flex;
+   width: 100%;
+   position: relative;
+
+  } */
+  .btn-group .signup-btn{
+    cursor: pointer;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 32px;
+    background-color: #d4df38;
+    padding: 15px 50px;
+  }
+  .image{
+    float: right;
+  }
+  .bolded { font-weight: bold; }
