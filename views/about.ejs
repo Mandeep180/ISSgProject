@@ -2,17 +2,16 @@
 <%- include partials/main_nav.ejs %>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/Content/about.css">
 
 
     <!--main content--> 
-        <main class="container">
-      <div class="jumbotron">
-        <h1 class="display-4"><%= title%></h1>
-    </main>
-
+    <main>
+    <div class="jumbotron">
+      <h1 class="display-4"><%= title%></h1>
+    </div>
+    
     <img class="image" src="/Assets/images/home_page.jpg"  width="900" height="600">
       <div class="text">
           <h3><Span>International Student Support</Span></h3><br><br>
@@ -33,6 +32,7 @@
              </div> 
             </div>
       </div>
+      </main>
 
     <%- include partials/bottom_nav.ejs %>
     <%- include partials/footer.ejs %>   
