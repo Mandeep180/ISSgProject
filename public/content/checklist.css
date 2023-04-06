@@ -1,0 +1,44 @@
+p {
+    margin: 0;
+  }
+  
+  h1, h2, h3, h4 {
+    line-height: 1.2;
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.65em;
+    color: #474d57;
+  }
+  
+  h4 {
+    font-size: 1.6rem;
+    margin-bottom: 0.25em;
+    color: #000;
+  }
+  
+  .CheckList-row {
+    display: table;
+    width: 100%;
+    background-color: #e1e6a9;
+  }
+  
+  .CheckList-row + h3 {
+    margin-top: 2.4rem;
+  }
+  
+  .CheckList-row:last-child > .CheckList-cell {
+    border-width: 0;
+  }
+  
+  .CheckList-cell {
+    display: table-cell;
+    padding: 0.2rem;
+    border-bottom: 1px solid #c9c9c9;
+    border-top: 1px solid #c9c9c9;
+    vertical-align: middle;
+  }
