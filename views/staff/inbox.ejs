@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Content/staff-dashboard.css">
+    <link rel="stylesheet" href="/Content/staff-inbox.css">
+    <!-- Iconscout Link For Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Staff Inbox</title>
 </head>
 <body>
@@ -72,12 +75,42 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M121 32C91.6 32 66 52 58.9 80.5L1.9 308.4C.6 313.5 0 318.7 0 323.9V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V323.9c0-5.2-.6-10.4-1.9-15.5l-57-227.9C446 52 420.4 32 391 32H121zm0 64H391l48 192H387.8c-12.1 0-23.2 6.8-28.6 17.7l-14.3 28.6c-5.4 10.8-16.5 17.7-28.6 17.7H195.8c-12.1 0-23.2-6.8-28.6-17.7l-14.3-28.6c-5.4-10.8-16.5-17.7-28.6-17.7H73L121 96z"/></svg>
             </a>
           </div>
-
-          <!--Inbox-->
           <div class="projects-section">
             <div class="projects-section-header">
-              <p>Inbox</p>
+              <p>Inbox/ Note's</p>
               <p class="time" id="date">Current Date</p>
+            </div>
+
+          <!--Inbox-->
+          
+              <div class="popup-box">
+                <div class="popup">
+                  <div class="content">
+                    <header>
+                      <p></p>
+                      <i class="uil uil-times"></i>
+                    </header>
+                    <form action="#">
+                      <div class="row title">
+                        <label>Title</label>
+                        <input type="text" spellcheck="false">
+                      </div>
+                      <div class="row description">
+                        <label>Description</label>
+                        <textarea spellcheck="false"></textarea>
+                      </div>
+                      <button></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper">
+                <li class="add-box">
+                  <div class="icon"><i class="uil uil-plus"></i></div>
+                  <p>Add new note</p>
+                </li>
+              </div>
+          
             </div>
 
             <div class="project-boxes jsGridView">
@@ -86,7 +119,7 @@
               
               
             </div>
-          </div>
+          
 
           
 
@@ -94,5 +127,7 @@
 
 
 </body>
+<script src="/Scripts/staff-inbox.js"></script>
 <script src="/Scripts/staff-dashboard.js"></script>
+
 </html>
