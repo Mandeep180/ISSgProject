@@ -1,7 +1,10 @@
 /*- - - - - - C O N T A C T - C A R D S - - - - - */
+table {
+	align-items: center;
+}
 
 .team .card{
-	width: 225px; /* ⬅ Size - Small (width: 200px), Medium (width: 225px), Large (width: 250px) */
+	width: 225px;
 	overflow: hidden;
 	background-color: #FFFFFF;
    

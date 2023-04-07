@@ -1,14 +1,10 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 <style>
   *{
     font-family: 'Nunito', sans-serif;
     text-align: center;
     font-weight: bold;
-   
   }
   .banner{
     width: 80%;
@@ -51,6 +47,10 @@
 
     <!--main content--> 
     <main>
+    <div class="jumbotron">
+      <h1 class="display-4"><%= title%></h1>
+    </div>
+
       <img class="image" src="/Assets/images/home_page.jpg"  width="900" height="600">
       <div class="text">
           <h3><Span>International Student Support</Span></h3><br><br>
