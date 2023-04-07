@@ -1,7 +1,20 @@
-var express = require('express');
+let express = require("express");
+let router = express.Router();
+let mongoose = require("mongoose");
 var app = express();
-var router = express.Router();
-var port = 3000;
+//var port = 3000;
+
+let passport = require("passport");
+//let studentController = require("../controllers/student");
+
+//function for guard purposes
+function requireAuth(req, res, next) {
+  // check if the user is logged in
+  if (!req.isAuthenticated()) {
+    return res.redirect("/login");
+  }
+  next();
+}
 
 
 app.set('view engine', 'ejs');
