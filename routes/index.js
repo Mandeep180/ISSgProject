@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var router = express.Router();
-var port = 3000;
+//var port = 3000;
 
 let indexController = require("../controllers/index");
 

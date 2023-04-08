@@ -1,4 +1,7 @@
-<%- include ../partials/header.ejs %> <%- include ../partials/main_nav.ejs %>
+<%- include ('../partials/header.ejs') %>
+
+<%- include ('../partials/main_nav.ejs') %>
+
 <link rel='stylesheet' href='/Content/login.css' />
 
 <link rel='stylesheet' href='/Content/login.css' />
@@ -45,6 +48,16 @@
             name="displayName" placeholder="Enter Display Name"
             id="displayName" required>
         </fieldset><br>
+
+        <!-- <fieldset class="form-group">
+          <label for="userType">Who are you? </label><br>
+            <input type="radio" class="userType" value="student" id="student" name="account"/>
+            <label for="radioOne" class="radio" chec>Student</label>
+            <input type="radio" class="userType" value="staff" id="staff" name="account"/>
+            <label for="radioTwo" class="radio">Staff</label>
+            <input type="radio" class="userType" value="recruiter" id="recruiter" name="account"/>
+            <label for="radioThree" class="radio">Recruiter</label>
+        </fieldset> -->
         
 
         <fieldset class="form-group text-right">
@@ -58,9 +71,17 @@
       </form>
     </div>
   </div>
+
+  <script>
+    //obtain checkbox value as a string
+    $("button").click(function(){
+        var userType = $(".userType:checked").userType();
+        alert(userType);
+      });
+  </script>
+
 </main>
 
+<%- include ('../partials/bottom_nav.ejs') %>  
 
-
-
-<%- include ../partials/bottom_nav.ejs %> <%- include ../partials/footer.ejs %>
+<%- include ('../partials/footer.ejs') %>
