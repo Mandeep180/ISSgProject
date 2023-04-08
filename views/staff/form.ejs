@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Content/staff-dashboard.css">
+    <link rel="stylesheet" href="/Content/staff-form.css">
     <title>Staff Form</title>
 </head>
 <body>
@@ -83,16 +84,55 @@
             <div class="project-boxes jsGridView">
 
                 <!--content-->
-              
-              
+                <form action="/formInfo" method="post" id="appointmentForm" class="appointment-form" onsubmit="displayModal()">
+                  <h2>Organize with student:</h2>
+                  
+                  <div class="form-group">
+                    <label for="studentName">Student Name:</label>
+                    <input type="text" id="studentName" name="studentName" placeholder="Enter student name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="studentEmail">Student Email:</label>
+                    <input type="email" id="studentEmail" name="studentEmail" placeholder="Enter student email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="staffName">Staff Member Name:</label>
+                    <input type="text" id="staffName" name="staffName" placeholder="Enter your name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="appointmentType">What Type:</label>
+                    <select id="appointmentType" name="organizeType" required>
+                      <option value="">-- Select a Type --</option>
+                      <option value="discussion">Appointment</option>
+                      <option value="discussion">Discussion</option>
+                      <option value="issue">Issue</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="appointmentDate">Which Day:</label>
+                    <input type="date" id="appointmentDate" name="appointmentDate" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="appointmentTime">What Time:</label>
+                    <input type="time" id="appointmentTime" name="appointmentTime" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="appointmentNotes">Leave a Notes to the student:</label>
+                    <textarea id="appointmentNotes" name="appointmentNotes" placeholder="Enter any additional information"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn">Submit</button>
+                  </div>
+                  <div class="form-group">
+                    <button type="button" class="btn" onclick="clearForm()">Clear</button>
+                  </div>
+                </form>
             </div>
           </div>
-
-          
-
-
 
 
 </body>
 <script src="/Scripts/staff-dashboard.js"></script>
+<script src="/Scripts/display-staff-form.js"></script>
 </html>

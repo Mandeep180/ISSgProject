@@ -1,0 +1,124 @@
+.appointment-form {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input, select, textarea {
+    display: block;
+    width: 100%;
+  }
+
+  .btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: lightgreen;
+  position: relative;
+	color:black;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #e1e6a9;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .modal-content p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .modal-content strong {
+    font-weight: bold;
+  }
+  
+  .modal-content button {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .send {
+	width: 20%;
+	padding: 0.5rem 1rem;
+	background-color: lightgreen;
+  position: relative;
+	color:black;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+  }
+  
+  .send:hover {
+    background-color: #e1e6a9;
+  }
+  
+
