@@ -4,8 +4,15 @@ let mongoose = require('mongoose');
 var app = express();
 //var port = 3000;
 
+//import axios
+
+const axios = require('axios');
+
 //import controller from student
 let controller = require('../controllers/student');
+
+//import controller from recruiter
+let recruiterController = require('../controllers/recruiter');
 
 let passport = require('passport');
 //let studentController = require("../controllers/student");
@@ -54,14 +61,19 @@ router.get('/student-contact', (req, res, next) => {
 });
 
 /* GET Student Job page */
-router.get('/student-job', (req, res, next) => {
-  res.render('student/job', {
-    title: 'Student Job Board',
-    //name: "",
+router.get('/student-job', (req, res) => {
+  axios.get('http://localhost:3000/student/api').then(function (response) {
+    res.render('student/job', {
+      post: response.data,
+      title: 'Student Job Board',
+    });
   });
 });
 
 //Post Student Request from student contact page
 router.post('/student-contact', controller.processStudentContactForm);
+
+//Api request to display Student job board
+router.get('/api', recruiterController.findJobPosts);
 
 module.exports = router;
