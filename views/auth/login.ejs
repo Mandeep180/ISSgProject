@@ -2,12 +2,18 @@
 
 <%- include ('../partials/main_nav.ejs') %>
 
-<link rel='stylesheet' href='/Content/login.css' />
+<link rel='stylesheet' href='/Content/register.css' />
 <main>
+  <br><br><br><br>
   <div class="container">
     <img src="/Assets/images/blog_lead.png"  width="300" height="600">
     <div>
-      <h1>Sign Up to International Student Support</h1>
+      <span>
+        <button id="other" class="btn"><a href="/login">Student</a></button>
+        <button id="other" class="btn"><a href="/staff-login">Staff</a></button>
+        <button id="other" class="btn"><a href="/recruiter-login">Recruiter</a></button>
+      </span>
+      <h1><%= title%></h1>
       <h6>One-stop to all your Questions</h6>
       <form method="POST" autocomplete="off">
         <fieldset class="form-group">
@@ -49,6 +55,65 @@
     </div>
   </div>
 </main>
+
+<!-- <link rel='stylesheet' href='/Content/login.css' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+<div class="sign-in">
+  <h2>International Student Support</h2>
+  <div class="container" id="container">
+      
+      <table>
+          <tr>
+              <th>
+                  <div class="form-container sign-in-container">
+                      <form method="POST" autocomplete="off">
+                          <h1><%= title%></h1>
+                          <br>
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="username"
+                                placeholder="Enter username"
+                                id="username"
+                                required
+                                autofocus
+                              />
+                          <input
+                            type="password"
+                            class="form-control"
+                            name="password"
+                            placeholder="Enter password"
+                            id="password"
+                            required
+                          />
+                          <br>
+                              <input type="submit" class="btn btn-success" value="Login" />
+                  </div>
+              </th>
+              <th>
+                  <div class="overlay-container">
+                      <div class="overlay">
+                          <div class="overlay-panel overlay-right">
+                              <h1>Not Registered?</h1>
+                              <br>
+                              <p>Our website is regularly updated with the latest news and developments affecting international students.</p>
+                              <br>
+                              <button class="ghost" id="signUp"><a href="/register">Sign Up Now</a></button>
+                          </div>
+                      </div>
+                  </div>  
+              </th>
+          </tr>
+      </table>  
+  </div>
+  <br>
+  <span>Not a student? Login here<br>
+    <button id="other"><a href="/login">Student</a></button>
+    <button id="other"><a href="/staff-login">Staff</a></button>
+    <button id="other"><a href="/recruiter-login">Recruiter</a></button>
+  </span>
+</div> -->
 
 <%- include ('../partials/bottom_nav.ejs') %>  
 

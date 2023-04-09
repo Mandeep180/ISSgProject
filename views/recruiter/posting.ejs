@@ -45,6 +45,8 @@
               <img src="/Assets/images/user-icon.png" />
               <span>Username</span>
             </button>
+            <br>
+            <a href="/logout" class="btn-login-navigation"><span class="glyphicon glyphicon-log-in"></span>Logout</a>
           </div>
           <!--Message button (Not working/showing)-->
           <button class="messages-btn">
@@ -107,10 +109,31 @@
                         <span class="details">Phone Number</span>
                         <input type="text" name="PhoneNumber"placeholder="Add Phone Number" required>
                       </div>
+
+                      <div class="input-group">
+                        <div class="input">
+                          <label for="Location" class="details">Location</label>
+                          <input type="text" class="textinput" name="Location" placeholder="Add Location" required>
+                        </div>
+                        <div class="input">
+                          <label for="Availability" class="details">Required Availability</label>
+                          <select name="Availability" class="textinput" required>
+                            <option value="FullTime">Full Time</option>
+                            <option value="PartTime">Part Time</option>
+                            <option value="Weekends">Weekends</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="salary-input">
+                        <label for="salary">Salary</label>
+                        <input type="text" name="Salary" placeholder="Add Salary" required>
+                      </div>
+
       
                       <div class="box">
                         <span class="job-details">Job Details</span>
-                        <input type="text" name="JobDetails" placeholder="Add Job Details" required>
+                        <textarea type="text" name="JobDetails" placeholder="Add Job Details" required rows="10" aria-placeholder="Write the details about your job"></textarea>
                       </div>
                     </div>
       

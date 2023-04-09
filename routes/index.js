@@ -29,6 +29,8 @@ router.get('/team', function(req, res, next) {
   res.render('team', { title: 'Meet the Team' });
 });
 
+
+/* STUDENT LOGIN */
 /* GET Route for displaying the Login page */
 router.get("/login", indexController.displayLoginPage);
 
@@ -44,5 +46,37 @@ router.post("/register", indexController.processRegisterPage);
 /* GET to perform UserLogout */
 router.get("/logout", indexController.performLogout);
 
+
+/* STAFF */
+/* GET Route for displaying the Login page */
+router.get("/staff-login", indexController.displayStaffLoginPage);
+
+/* POST Route for processing the Login page */
+router.post("/staff-login", indexController.processStaffLoginPage);
+
+/* GET Route for displaying the Register page */
+router.get("/staff-register", indexController.displayStaffRegisterPage);
+
+/* POST Route for processing the Register page */
+router.post("/staff-register", indexController.processStaffRegisterPage);
+
+
+/* RECRUITER LOGIN */
+/* GET Route for displaying the Login page */
+router.get("/recruiter-login", indexController.displayRecruiterLoginPage);
+
+/* POST Route for processing the Login page */
+router.post("/recruiter-login", indexController.processRecruiterLoginPage);
+
+/* GET Route for displaying the Register page */
+router.get("/recruiter-register", indexController.displayRecruiterRegisterPage);
+
+/* POST Route for processing the Register page */
+router.post("/recruiter-register", indexController.processRecruiterRegisterPage);
+
+
+
+/* GET to perform UserLogout */
+router.get("/logout", indexController.performLogout);
 
 module.exports = router;
