@@ -1,0 +1,330 @@
+:root {
+  --hoverButton: #4c50d3;
+  --secondaryColor: #e1e6a9;
+  --fontColor: #1e1e1e;
+  --whiteColor: #fff;
+  --greyColor: #e7e7e7;
+  --darkGreyColor: #5f5f5f;
+  --sofPurple: #e7e8ff;
+  --softBlue: #c3e1ff;
+  --softYellow: #fff5cc;
+  --softRed: #ffcbc8;
+  --app-container: #f3f6fd;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.mainContent {
+  width: calc(75%);
+  min-height: 100%;
+  min-width: 300px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2%;
+  z-index: 1;
+}
+
+.mainContentHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-bar {
+  background-color: var(--whiteColor);
+  padding: 0.5rem;
+  border-radius: 20px;
+  display: none;
+}
+
+.mainSearch {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border: none;
+  background-color: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  position: relative;
+  background-color: var(--app-container);
+}
+
+.mainSearch input {
+  width: 90%;
+  border: none;
+  background-color: var(--app-container);
+}
+
+.mainBtnSearch {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0 5%;
+  border: none;
+  background-color: var(--secondaryColor);
+  font-size: 12px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+}
+
+.mainBtnSearch:hover {
+  background-color: var(--hoverButton);
+  color: var(--whiteColor);
+}
+
+.mainFilterWrapper {
+  margin: 1rem 0;
+  font-size: 14px;
+}
+
+.filter {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+}
+
+.btn-filter {
+  min-width: 110px;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--secondaryColor);
+}
+
+.btn-filter:hover {
+  background-color: var(--hoverButton);
+  color: var(--whiteColor);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.mainSort {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mainSort p {
+  font-size: 14px;
+}
+
+.sort-list select {
+  height: 1.5rem;
+  border-radius: 20px;
+  border: none;
+  margin-top: 0 0.5rem;
+  background-color: var(--app-container);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.mainWrapper {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  gap: 1rem;
+  overflow-y: scroll;
+  height: 280px;
+}
+
+.jobcard {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 3%;
+  margin: 0 1%;
+  background-color: var(--app-container);
+  line-height: 1.5;
+  gap: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 10px;
+  cursor: pointer;
+}
+
+.jobcard:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-left {
+  width: 10%;
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  border: 20%;
+}
+
+.card-left ion-icon {
+  font-size: 50px;
+}
+
+.card-center {
+  width: 50%;
+}
+
+.card-loc,
+.card-sub {
+  font-size: 13px;
+  color: var(--darkGreyColor);
+}
+.card-sub {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-sub p {
+  display: flex;
+  padding: 0 0.5rem 0 0;
+  align-items: center;
+}
+.card-right {
+  width: 15%;
+}
+.card-tag a {
+  color: var(--fontColor);
+  font-size: 13px;
+}
+
+.card-salary {
+  padding: 0.5rem 0;
+  color: var(--hoverButton);
+}
+
+.card-salary span {
+  color: var(--fontColor);
+}
+
+.job-detail {
+  width: 25%;
+  min-width: 250px;
+  height: 95%;
+  vertical-align: middle;
+  padding: 2rem;
+  position: relative;
+  right: 0;
+  background-color: var(--app-container);
+  overflow: auto;
+  box-shadow: rgba(100, 100, 111, 0.2);
+}
+
+.close-detail {
+  display: none;
+}
+
+.detail-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-header ion-icon {
+  font-size: 50px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--greyColor);
+  border: none;
+  margin: 1rem 0;
+}
+
+.detail-desc {
+  line-height: 1.5;
+}
+
+.about a {
+  margin: 0.5rem 0 0 0;
+  color: var(--hoverButton);
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.detail-btn {
+  display: flex;
+}
+
+.detail-btn button {
+  background-color: var(--secondaryColor);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.detail-btn button:hover {
+  background-color: var(--hoverButton);
+  color: var(--whiteColor);
+}
+
+@media screen and (max-width: 1146px) {
+  .mainContent {
+    width: 65%;
+  }
+  .job-detail {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .menu-bar {
+    display: block;
+  }
+  .mainContent {
+    width: 60%;
+    margin-left: 0;
+  }
+  .job-detail {
+    width: 25%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .mainContent {
+    width: 100%;
+  }
+
+  .card-center {
+    width: 45%;
+  }
+
+  .card-right {
+    width: 20%;
+  }
+
+  .job-detail {
+    display: none;
+  }
+
+  .job-detail.active {
+    display: block;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--whiteColor);
+  }
+  .mainContent.inactive {
+    display: none;
+  }
+
+  .job-detail.active .close-detail {
+    display: block;
+    cursor: pointer;
+  }
+}

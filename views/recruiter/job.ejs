@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Content/recruiter-dashboard.css">
+    <link rel="stylesheet" href="/Content/recruiter-jobboard.css">
     <title>Recruiter Job Board</title>
 </head>
 <body>
@@ -80,19 +81,174 @@
               <p class="time" id="date">Current Date</p>
             </div>
 
-            <div class="project-boxes jsGridView">
-
+            <div class="project-boxes jsGridView noPadding">
                 <!--content-->
-              
-              
+              <div class="mainContent">
+                <div class="mainContentHeader">
+                  <ion-icon class="menu-bar" name="menu-outline"></ion-icon>
+                  <div class="mainSearch">
+                    <input type="text" placeholder="Find a job now...">
+                    <button class="mainBtnSearch"><ion-icon name="search-outline"></ion-icon></button>
+                  </div>
+                </div>
+                <div class="mainFilterWrapper">
+                  <p>Recommendation</p>
+                  <div class="filter">
+                    <button class="btn-filter">Full Stack Developer</button>
+                    <button class="btn-filter">Front-End Developer</button>
+                    <button class="btn-filter">Backend Developer</button>
+                    <button class="btn-filter">UI Designer</button>
+                    <button class="btn-filter">Software Architect</button>
+                    <button class="btn-filter">Data Analyst</button>
+                  </div>
+                </div>
+                <div class="mainSort">
+                  <p>Sort</p>
+                  <div class="sort-list">
+                    <select>
+                      <option value="0">All</option>
+                      <option value="1">Newest Post</option>
+                      <option value="2">Oldest Post</option>
+                      <option value="3">Most Relevant</option>
+                      <option value="4">Highest Paid</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!--Wrapper-->
+                <div class="mainWrapper">
+                  <div class="jobcard">
+                    <div class="card-left blue-bg">
+                      <ion-icon name="document-attach"></ion-icon>
+                    </div>
+                    <div class="card-center">
+                      <h3>Centennial College</h3>
+                      <p class="card-detail">Software Developer</p>
+                      <p class="card-loc"><ion-icon name="location-outline"></ion-icon>941 Progress Ave</p>
+                      <div class="card-sub">
+                        <p><ion-icon name="today-outline"></ion-icon>1 mins ago</p>
+                        <p><ion-icon name="hourglass-outline"></ion-icon>Full-time</p>
+                      </div>
+                    </div>
+                    <div class="card-right">
+                      <div class="card-tag">
+                        <h5>Divisions</h5>
+                        <a href="#">Full Stack Developer</a>
+                      </div>
+                      <div class="card-salary">
+                        <p><b>$500k</b><span> / year</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                  <div class="jobcard">
+                    <div class="card-left blue-bg">
+                      <ion-icon name="document-attach"></ion-icon>
+                    </div>
+                    <div class="card-center">
+                      <h3>Google</h3>
+                      <p class="card-detail">Software Architect</p>
+                      <p class="card-loc"><ion-icon name="location-outline"></ion-icon>123 Example St</p>
+                      <div class="card-sub">
+                        <p><ion-icon name="today-outline"></ion-icon>1 mins ago</p>
+                        <p><ion-icon name="hourglass-outline"></ion-icon>Part-time</p>
+                      </div>
+                    </div>
+                    <div class="card-right">
+                      <div class="card-tag">
+                        <h5>Divisions</h5>
+                        <a href="#">Software</a>
+                      </div>
+                      <div class="card-salary">
+                        <p><b>$1000k</b><span> / year</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                  <div class="jobcard">
+                    <div class="card-left blue-bg">
+                      <ion-icon name="document-attach"></ion-icon>
+                    </div>
+                    <div class="card-center">
+                      <h3>Tik Tok</h3>
+                      <p class="card-detail">UI Designer</p>
+                      <p class="card-loc"><ion-icon name="location-outline"></ion-icon>123 Example St</p>
+                      <div class="card-sub">
+                        <p><ion-icon name="today-outline"></ion-icon>1 week ago</p>
+                        <p><ion-icon name="hourglass-outline"></ion-icon>Full-time</p>
+                      </div>
+                    </div>
+                    <div class="card-right">
+                      <div class="card-tag">
+                        <h5>Divisions</h5>
+                        <a href="#">Designer</a>
+                      </div>
+                      <div class="card-salary">
+                        <p><b>$350k</b><span> / year</span></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!---->
+                  <div class="jobcard">
+                    <div class="card-left blue-bg">
+                      <ion-icon name="document-attach"></ion-icon>
+                    </div>
+                    <div class="card-center">
+                      <h3>Open AI</h3>
+                      <p class="card-detail">Programmer</p>
+                      <p class="card-loc"><ion-icon name="location-outline"></ion-icon>123 Example St</p>
+                      <div class="card-sub">
+                        <p><ion-icon name="today-outline"></ion-icon>1 day ago</p>
+                        <p><ion-icon name="hourglass-outline"></ion-icon>Full-time</p>
+                      </div>
+                    </div>
+                    <div class="card-right">
+                      <div class="card-tag">
+                        <h5>Divisions</h5>
+                        <a href="#">Machine Learning</a>
+                      </div>
+                      <div class="card-salary">
+                        <p><b>$650k</b><span> / year</span></p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="job-detail">
+                <ion-icon class="close-detail" name="close-outline"></ion-icon>
+                <div class="detail-header">
+                  <ion-icon name="document-attach"></ion-icon>
+                  <h2>Google</h2>
+                  <p>Software Developer</p>
+                </div>
+                <hr class="divider">
+                <div class="detail-desc">
+                  <div class="about">
+                    <h4>About Company</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores iusto mollitia magni? Incidunt maxime velit dolores expedita. Ipsum mollitia in possimus facere aspernatur velit nemo? Tenetur accusamus modi praesentium?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste explicabo numquam commodi saepe reprehenderit dolorum voluptatibus sapiente quia, error vero unde sed</p>
+                     <a href="#">Read More...</a>
+                  </div>
+                </div>
+                <hr class="divider">
+                <div class="detail-btn">
+                  <button>Apply Now</button>
+                </div>
+              </div>
             </div>
           </div>
 
-          
-
-
-
-
 </body>
+<!--Ionic Icons-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--Jquery-->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<!--Script Recruiter Dashboard-->
 <script src="/Scripts/recruiter-dashboard.js"></script>
+<!--Script Recruiter Job Board-->
+<script src="/Scripts/recruiter-jobboard.js"></script>
 </html>
