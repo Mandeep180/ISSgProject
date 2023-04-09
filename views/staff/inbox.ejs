@@ -105,10 +105,14 @@
                 </div>
               </div>
               <div class="wrapper">
-                <li class="add-box">
-                  <div class="icon"><i class="uil uil-plus"></i></div>
-                  <p>Add new note</p>
-                </li>
+                <% for(var i= 0; i< requests.length; i++) {%>
+                  <li class="add-box">
+                    <p>New Message</p>
+                    <p>From: <%=requests[i].name%></p>
+                    <p><%=requests[i].email%></p>
+                    <p><%=requests[i].message%></p>
+                  </li>
+                  <%}%>
               </div>
           
             </div>

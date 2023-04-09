@@ -1,0 +1,65 @@
+.student-contact-form {
+  text-align: center;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  margin-top: 50px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+form label {
+  margin-right: 10px;
+}
+.input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.input input {
+  width: 85%;
+}
+
+@media screen and (max-width: 430px) {
+  .student-contact-form {
+    width: 90%;
+  }
+  .input input {
+    width: 100%;
+  }
+  .input-group {
+    display: block;
+    margin-bottom: 0px;
+  }
+  .input-group input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.textarea textarea {
+  width: 100%;
+  height: 200px;
+  margin-top: 5px;
+}
+
+form button {
+  background-color: #e1e6a9;
+  color: #888;
+  border: #888 2px solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: #888;
+  color: #e1e6a9;
+}
