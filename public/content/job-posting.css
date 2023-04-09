@@ -100,3 +100,46 @@ form .user-details .box {
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
+
+.input-group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+
+.input label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input .textinput {
+  height: 45px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 870px) {
+  .input-group {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

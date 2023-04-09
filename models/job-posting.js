@@ -26,6 +26,16 @@ var schema = new mongoose.Schema({
     required: true,
   },
 
+  Location: {
+    type: String,
+    required: true,
+  },
+
+  Availability: {
+    type: String,
+    required: true,
+  },
+
   JobDetails: {
     type: String,
     required: true,
