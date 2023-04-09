@@ -2,14 +2,19 @@
 
 <%- include ('../partials/main_nav.ejs') %>
 
-<link rel='stylesheet' href='/Content/login.css' />
-
-<link rel='stylesheet' href='/Content/login.css' />
+<link rel='stylesheet' href='/Content/register.css' />
 <main>
   <div class="container">
     <img src="/Assets/images/male_books.png"  width="400" height="600">
     <div>
-      <h1>Register to I.Student Support</h1>
+      <br><br><br><br>
+      <h1>Register to International Student Support</h1>
+      <h1><%= title%></h1>
+      <span>
+        <button id="other"><a href="/register">Student</a></button>
+        <button id="other"><a href="/staff-register">Staff</a></button>
+        <button id="other"><a href="/recruiter-register">Recruiter</a></button>
+      </span>
       <h2></h2>
       <form method="POST" autocomplete="off">
         <fieldset class="form-group">
