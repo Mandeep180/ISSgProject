@@ -3,6 +3,9 @@
   width: 49%;
   margin-left: auto;
   margin-right: auto;
+  height: 600px;
+  overflow-y: scroll;
+  padding-right: 20px;
 }
 
 .container form .user-details {

@@ -1,0 +1,31 @@
+<%for(var i = 0; i < post.length; i++){%>
+<div class="jobcard">
+  <div class="card-left blue-bg">
+    <ion-icon name="document-attach"></ion-icon>
+  </div>
+  <div class="card-center">
+    <h3><%=post[i].CompanyName%></h3>
+    <p class="card-detail"><%=post[i].JobTitle%></p>
+    <p class="card-loc">
+      <ion-icon name="location-outline"></ion-icon><%=post[i].Location%>
+    </p>
+    <div class="card-sub">
+      <p>
+        <ion-icon name="hourglass-outline"></ion-icon><%=post[i].Availability%>
+      </p>
+    </div>
+  </div>
+  <div class="card-right">
+    <div class="card-tag">
+      <h5>Contact</h5>
+      <a href="#"><%=post[i].PhoneNumber%></a>
+      <br />
+      <a href="#"><%=post[i].Email%></a>
+    </div>
+    <div class="card-salary">
+      <p><b>$<%=post[i].Salary%>K</b><span> / year</span></p>
+    </div>
+  </div>
+</div>
+<%}%>
+<!---->
