@@ -66,6 +66,7 @@ router.get('/student-job', (req, res) => {
     res.render('student/job', {
       post: response.data,
       title: 'Student Job Board',
+      req: req,
     });
   });
 });

@@ -1,5 +1,5 @@
 <%for(var i = 0; i < post.length; i++){%>
-<div class="jobcard">
+<div class="jobcard" id="<%=post[i]._id%>">
   <div class="card-left blue-bg">
     <ion-icon name="document-attach"></ion-icon>
   </div>
@@ -27,5 +27,6 @@
     </div>
   </div>
 </div>
-<%}%>
+
+<% }%>
 <!---->

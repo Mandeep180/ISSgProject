@@ -1,0 +1,65 @@
+<% if (req.query.id == null) { %>
+    <div class="job-detail" style="display: none">
+      <ion-icon class="close-detail" name="close-outline"></ion-icon>
+      <div class="detail-header">
+        <ion-icon name="document-attach"></ion-icon>
+        <h2>Google</h2>
+        <p>Software Developer</p>
+      </div>
+      <hr class="divider" />
+      <div class="detail-desc">
+        <div class="about">
+          <h4>About Company</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            dolores iusto mollitia magni? Incidunt maxime velit dolores expedita.
+            Ipsum mollitia in possimus facere aspernatur velit nemo? Tenetur
+            accusamus modi praesentium?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste explicabo
+            numquam commodi saepe reprehenderit dolorum voluptatibus sapiente quia,
+            error vero unde sed
+          </p>
+          <a href="#">Read More...</a>
+        </div>
+      </div>
+      <hr class="divider" />
+      <div class="detail-btn">
+        <button>Apply Now</button>
+      </div>
+    </div>
+    <% }else{ var id = req.query.id;%> <%for( var i = 0; i < post.length; i++ ){%>
+    <%if(post[i]._id == id){%>
+    <div class="job-detail">
+      <ion-icon class="close-detail" name="close-outline"></ion-icon>
+      <div class="detail-header">
+        <ion-icon name="document-attach"></ion-icon>
+        <h2><%=post[i].CompanyName%></h2>
+        <p><%=post[i].JobTitle%></p>
+        <br/>
+        <p style="font-size: 12px">
+          <ion-icon name="location-outline" style="font-size: 12px"></ion-icon><%=post[i].Location%>
+        </p>
+          <p style="font-size: 12px">
+            <ion-icon name="hourglass-outline" style="font-size: 12px"></ion-icon><%=post[i].Availability%>
+          </p>
+          <p style="font-size: 12px"><%=post[i].Email%></p>
+        </div>
+        <hr class="divider" />
+        <div class="detail-desc">
+          <div class="about">
+            <h4 style="justify-content: center; display: flex">Job Description</h4>
+            <p></p>
+            <p><%=post[i].JobDetails%></p>
+          </div>
+        </div>
+        <hr class="divider" />
+        <div class="detail-btn">
+          <button>Apply Now</button>
+        </div>
+      </div>
+    
+      <%}%><%}%> <%}%>
+    </div>
+    

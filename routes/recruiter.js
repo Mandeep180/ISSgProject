@@ -24,6 +24,7 @@ router.get('/recruiter-job', (req, res) => {
     res.render('recruiter/job', {
       post: response.data,
       title: 'Job Board',
+      req: req,
     });
   });
 });
