@@ -1,4 +1,11 @@
 /*- - - - - - C O N T A C T - C A R D S - - - - - */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
 table {
 	align-items: center;
 }
