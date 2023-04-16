@@ -1,13 +1,37 @@
 <%- include ('partials/header.ejs') %>
 
 <%- include ('partials/main_nav.ejs') %>
+<style>
+  
+
+.bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  text-align: center;
+}
+.bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+</style>
 
 <!--main content-->
 <main class="container">
   <div class="jumbotron">
     <h1 class="display-4"><%= title%> page</h1>
-
+    <img class="image" src="/Assets/images/Centennial_college.png" width="900" height="800"  >
   </div>
+
+  
 </main>
 
   <%- include ('partials/bottom_nav.ejs') %>
